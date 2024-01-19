@@ -1,0 +1,288 @@
+.block {
+  overflow: hidden;
+  width: 160px;
+  height: 226px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-top: 29px;
+  align-items: center;
+  background-color: #BEF097;
+}
+
+.block__line{
+  width: 100%;
+  height: 1px;
+  margin: 13px 0;
+  background-color: #1c1d1c;
+}
+
+.main__first-screen {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.main__products {
+  margin: 0 auto;
+
+  display: flex;
+  gap: 55px;
+  flex-direction: column;
+  max-width: 90%;
+}
+
+.block--products{
+  justify-content: space-between;
+}
+
+.main__services {
+  margin: 0 auto;
+
+  display: flex;
+  gap: 55px;
+  flex-direction: column;
+  max-width: 90%;
+}
+
+.block--sevices{
+  background-color: #409C59;
+}
+
+.block--sevices .block__line{
+  background-color: #f7f7f7;
+}
+
+.block--sevices h3{
+  color: #f7f7f7;
+}
+
+.block--sevices img{
+  flex-shrink: 0;
+  height: 40px;
+}
+
+.main__app{
+  margin: 0 auto;
+
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  align-items: center;
+}
+
+.main__app__tetx-section{
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  align-items: center;
+}
+
+.main__app__tetx-section div{
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  align-items: center;
+  text-align: center;
+}
+
+.main__app img{
+  max-width: 390px;
+  width: 80vw;
+}
+
+.main__navigation{
+  width: 100%;
+}
+
+.navigation-links{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  width: 1080px;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.main__news{
+  margin: 0 auto;
+
+  width: 1080px;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.block--news {
+  height: 190px;
+}
+
+.main__feedback {
+  margin: 0 auto;
+
+  width: 1080px;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.block--feedback{
+  width: 100%;
+  height: auto;
+  background: none;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.block--feedback input{
+  border-radius: 50px;
+  border: 1px solid #717171;
+  background: #F7F7F7; 
+  width: 99%;
+  flex-shrink: 0;
+  
+  color: #1C1D1C;
+  font-family: Waybuloo Arial;
+  font-size: 15px;
+  font-style: normal;
+  line-height: normal; 
+}
+
+.feedback__name{
+  height: 61px;
+}
+
+.feedback__email{
+  height: 61px;
+}
+
+.feedback__message{
+  height: 347px; 
+}
+
+.main__quetions{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 55px
+}
+
+.main__quetions h2{
+  width: 1080px;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.block--questions{
+  justify-content: center;
+  padding: 0;
+  width: 70%;
+  height: 81px;
+  flex-shrink: 0;
+  align-items: flex-end;
+  background: #409C59;
+}
+
+.block--questions input{
+  padding: 0;
+  margin-right: 10px;
+  border-radius: 50px;
+  border: 1px solid #717171;
+  background: #F7F7F7; 
+  width: 90%;
+  height: 61px;
+  flex-shrink: 0;
+  
+  color: #1C1D1C;
+  font-family: Waybuloo Arial;
+  font-size: 15px;
+  font-style: normal;
+  line-height: normal;  
+}
+
+
+@media (min-width: 1440px){
+  .block {
+    width: 388px;
+    height: 308px; 
+    padding-top: 73px;
+  }
+
+  .block__line{
+    margin: 23px 0;
+    height: 2px;
+  }
+
+  .main__first-screen{
+    gap: 85px;
+  }
+
+  .main__products .slider{
+    flex-wrap: wrap;
+    width: 1204px;
+  }
+  
+  .main__products h2{
+    width: fit-content;
+  }
+
+  .main__services{
+    margin: 0;
+    margin-left: calc((100vw - 1204px)/2);
+  }
+
+  .block--sevices{
+    height: 457px
+  }
+
+  .block--sevices img{
+    transform: scale(2);
+    padding-top: 50px;
+  }
+
+  .main__app{
+    flex-direction: row;
+    width: auto;
+  }
+
+  .main__app__tetx-section{
+    height: 575px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .main__app__tetx-section div h2{
+    width: 100%;
+    text-align: left;
+  }
+
+  .block--feedback{
+    width: 100%;
+    height: fit-content;
+    flex-shrink: 0;
+    background: #409C59;
+    box-sizing: border-box;
+    padding: 75px 20px;
+  }
+
+  .block--questions{
+    background: none;
+    height: auto;
+    width: 100%;
+    align-items: center;
+  }
+
+  .block--questions input{
+    margin: 0;
+    width: 1080px;
+    max-width: none;
+  }
+
+}
